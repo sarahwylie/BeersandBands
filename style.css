@@ -8,6 +8,19 @@
 }
 
 .row1 {
-  background: rgb(141, 220, 147);
+  background: #e9d37a;
+  color: #444;
   border: 2px solid darkgreen;
+}
+.row2 {
+  background: #3e3200;
+  color: #e9d37a;
+  border: 2px solid darkgreen;
+}
+
+.btnDiv {
+  border-radius: 5px;
+  background: #e9d37a;
+  text-align: center;
+  width: 10%;
 }
