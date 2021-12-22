@@ -79,7 +79,9 @@ img{
   position: relative;
 }
 
-
+.btnDiv {
+  color: white;
+}
 
 }
 /* .site nav a{
