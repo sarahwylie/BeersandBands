@@ -4,9 +4,9 @@
 
 ## Created with HTML, CSS, JavaScript, APIs, and Bulma.
 
-## Check out our site at https://sarahwylie.github.io/BeersandBands/
-
 ##*Screenshot here*
 
-### Made with :drop_of_blood: :cold_sweat: and :cry: (plus a whole lot of :heart:) by
-Sarah Wylie, Travis Bryant, Gregory Rouark, John Hughes, and Staisha Knight
+## Check out our site at https://sarahwylie.github.io/BeersandBands/
+
+### Made with :blood: :sweat-drop: and :tear-drop: (plus a whole lot of :heart:) by
+###Sarah Wylie, Travis Bryant, Gregory Rouark, John Hughes, and Staisha Knight
