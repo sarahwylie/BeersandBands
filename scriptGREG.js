@@ -1,11 +1,11 @@
 $.ajax({
-    url:"https://api.openbrewerydb.org/breweries/search?query=beer&per_page=25",
+    url:"https://api.openbrewerydb.org/breweries/search?query=city&per_page=25",
     type:"GET",
-    success:function(result){
+    success:function(name, street, state, phone){
        var htmlcode=""
         
         result.forEach(brewery => { 
-htmlcode=htmlcode+"<p>"+brewery.name+"</p>"
+
 
         })
 
