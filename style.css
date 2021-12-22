@@ -1,13 +1,22 @@
-.row2,
+/* .row2, */
 .navbar,
 .row1 {
-  padding-top: 5rem;
+  background: #e9d37a;
+/*     background: rgb(141, 220, 147); */
+  color: #444;
+  border: 2px solid darkgreen;
+    padding-top: 5rem;
   padding: 1rem;
-  background: #444;
-  color: white;
+}
+.row2 {
+  background: #3e3200;
+  color: #e9d37a;
+  border: 2px solid darkgreen;
 }
 
-.row1 {
-  background: rgb(141, 220, 147);
-  border: 2px solid darkgreen;
+.btnDiv {
+  border-radius: 5px;
+  background: #e9d37a;
+  text-align: center;
+  width: 10%;
 }
