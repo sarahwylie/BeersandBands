@@ -10,7 +10,7 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"/>  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  
   <link rel="stylesheet" href="./assets/style.css" />
   <link rel="icon" type="image/jpg" sizes="48x48" href="./images/kane-reinholdtsen-LETdkk7wHQk-unsplash.jpg">
   <title>Beers and Bands</title>
@@ -35,7 +35,7 @@
 <body>
   <div class="container is-widescreen is-fullhd hero">
     <nav class="hero-body has-background-warning">
-      <span class="title h1 has-text-info	has-text-centered">Beers and Bands</span>
+      <span class="title h1 has-text-info	has-text-centered">Your One Stop Shop For The Perfect Night Out!</span>
   </div>
 <!--         <div class="container">
       <nav class="navbar navbar-light bg-light">
@@ -46,6 +46,7 @@
   
   <div class="container is-fluid">
     <div class="is-flex-direction-row has-text-info">
+    </br>
       Welcome to your best night ever.
       </br>
       Visiting a new city? Stuck in a rut in your own city? Venturing across town?
@@ -53,24 +54,28 @@
       Feeling hip and hoppy? Grooving on some chill grains? Need some extra yeast in your screamo?
       </br>
       Simply type the desired zip code and a date range to compile your ultimate night out!
+    </br>
     </div>
            
-  <div class="row row2">
+  <div class="row row2 fill-out">
     <form>
       <div class="mb-3">
         <label for="location" class="form-label">Zip Code:</label>
+      
         <input type="text" class="form-control" id="location" aria-describedby="locationQuery" />
 <!--         <div id="emailHelp" class="form-text"> -->
-        </div>
-      </div>
-      <div class="mb-3">
+
+      </br>
+      <div class="mb-3 fill-out">
         <!-- Future Development - date range picker: http://www.daterangepicker.com/ -->
+    
         <label for="date" class="form-label">Starting Date:</label>
         <input type="date" class="form-control" id="date" />
         <label for="date" class="form-label">Ending Date: </label>
         <input type="date" class="form-control" id="date" />
+     
       </div>
-      <div class="mb-3 form-check">
+      <div class="mb-3 form-check fill out">
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
@@ -78,14 +83,14 @@
     </form>
   </div>
        <div class="btnDiv">
-            <a href="./results.html" class="button black">Link Button</a>
+        
           </div>
         </form>
       </div>
 
-      <div id="result-brewery"class="row row3"></div>
+      
     </div>
-  <div class="row row3"></div>
+  <div class="row3"></div>
   </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
