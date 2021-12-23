@@ -32,12 +32,13 @@ var getCity = (city) => {
 };
  
 var displayBreweries = (res) => {
-    // breweriesOutput.textContent = "";
-
-    var city = res[0].city;
-    var name = res[0].name;
-    var address = res[0].street;
-    var web = res[0].website_url;
+    // breweriesOutput.innerHTML = "";
+    // cityResult.innerHTML = "";
+ 
+    var city = res[i].city;
+    var name = res[i].name;
+    var address = res[i].street;
+    var web = res[i].website_url;
 
     console.log(city, name, address, web)
 
@@ -45,12 +46,16 @@ var displayBreweries = (res) => {
     var brewMug = document.createElement("div")
     var brewAddress = document.createElement("p")
     var brewWeb = document.createElement("p")
-    // breweriesOutput.append(brewMug, brewAddress, brewWeb)
+    // breweriesOutput.append(brewMug)
 
-    // for (city) {
-    //     i 
-    // }
+    for (var i=0; i < res.length; i++) {
+        console.log("Welcome to hell, " + res[i] + "!");
+
+    cityResult.textContent = `${city[i]}`
+    // brewMug.textContent = 
+    }
 }
+
 // $.ajax({
 //     url:"https://api.openbrewerydb.org/breweries/search?query=beer&per_page=25",
 //     type:"GET",
