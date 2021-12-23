@@ -2,10 +2,10 @@
 .navbar,
 .row1 {
   background: #e9d37a;
-/*     background: rgb(141, 220, 147); */
+  /*     background: rgb(141, 220, 147); */
   color: #444;
   border: 2px solid darkgreen;
-    padding-top: 5rem;
+  padding-top: 5rem;
   padding: 1rem;
 }
 .row2 {
@@ -19,4 +19,17 @@
   background: #e9d37a;
   text-align: center;
   width: 10%;
+}
+
+button,
+a text {
+  text-decoration: none;
+  background: #e9d37a;
+}
+
+button:hover,
+a:hover {
+  text-decoration: none;
+  color: #e9d37a;
+  background: #3e3200;
 }

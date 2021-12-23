@@ -11,37 +11,34 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"/>  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <!-- jQuery link -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- FontAwesome JS links -->
+<link rel="stylesheet" href="../src/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+<script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+<script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+<script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
   <link rel="stylesheet" href="./assets/style.css" />
   <link rel="icon" type="image/jpg" sizes="48x48" href="./images/kane-reinholdtsen-LETdkk7wHQk-unsplash.jpg">
   <title>Beers and Bands</title>
 </head>
-       
+<body>      
   <header>
     <div class="content">
       <hgroup>
         <h1>Beers and Bands</h1>
+        <div class="btnDiv"><a href="#formSearch">▼</a></div>
       </hgroup>
     </div>
     <div class="overlay"></div>
   </header>
-  <section class="site">
-    <!-- <nav>
-      <a href="">About Us</a>
-      <a href="">Bands </a>
-      <a href="">Beers</a>
-      <a href="">Contact </a> -->
-    <!-- </nav> -->
-   
-<body>
+  <section class="site">   
+
   <div class="container is-widescreen is-fullhd hero">
     <nav class="hero-body has-background-warning">
       <span class="title h1 has-text-info	has-text-centered">Beers and Bands</span>
   </div>
-<!--         <div class="container">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
-        </div> -->
+
   </nav>
   
   <div class="container is-fluid">
@@ -52,15 +49,15 @@
       </br>
       Feeling hip and hoppy? Grooving on some chill grains? Need some extra yeast in your screamo?
       </br>
-      Simply type the desired zip code and a date range to compile your ultimate night out!
+      Simply type the desired city and a date range to compile your ultimate night out!
     </div>
            
-  <div class="row row2">
+  <div class="row row2" id="formSearch">
     <form>
       <div class="mb-3">
         <label for="location" class="form-label">Zip Code:</label>
         <input type="text" class="form-control" id="location" aria-describedby="locationQuery" />
-<!--         <div id="emailHelp" class="form-text"> -->
+        <div id="emailHelp" class="form-text">
         </div>
       </div>
       <div class="mb-3">
@@ -70,14 +67,15 @@
         <label for="date" class="form-label">Ending Date: </label>
         <input type="date" class="form-control" id="date" />
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button id="searchBtn" type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
+
+
+
        <div class="btnDiv">
+            <!-- a is the anchor tag that has an href (website address) as a parameter
+            this is how you link pages together, or access files, and more -->
             <a href="./results.html" class="button black">Link Button</a>
           </div>
         </form>
@@ -92,7 +90,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
-    <script src="./scriptGREG.js"></script>
+    <script src="./script.js"></script>
+
+    <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
 </body>
 
 </html>
