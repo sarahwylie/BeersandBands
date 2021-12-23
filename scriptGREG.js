@@ -2,20 +2,31 @@ var cityBtn = document.querySelector(".submitBtn");
 var cityInputEl = document.querySelector("#location")
 var breweriesOutput = document.querySelector(".brewery-results")
 var cityResult = document.querySelector(".city-result")
+var startDateInput = document.querySelector("#start-date")
+var endDateInput = document.querySelector("#end-date")
 
 //form submit
 var formSubmitHandler = (event) => {
     event.preventDefault();
     //get value from input element
     var city = cityInputEl.value.trim();
+    var startDate = startDateInput.value.trim();
+    var endDate = endDateInput.value.trim();
     if (city) {
         getCity(city);
         //clear old content from form input
         cityInputEl.value = "";
-    } else {
+        startDateInput.value = "";
+        endDateInput.value = "";
+    } else if (city === false) {
         alert("Please enter a city");
+    }  else if (startDate === false) {
+        alert("Please choose a start date")
+    } else if (endDate === false) {
+        alert("Please choose an end date")
     }
     getCity(city);
+    getEventResults(city);
 };
 
 var getCity = (city) => {
