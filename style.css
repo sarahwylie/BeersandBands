@@ -1,9 +1,17 @@
+.brewery {
+  background: #222;
+  color: #fae195;
+  margin: 0 10%;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
 /* .row2, */
 .navbar,
 .row1 {
   background: #e9d37a;
-  /*     background: rgb(141, 220, 147); */
-  color: #444;
+  /* background: rgb(141, 220, 147); */
+  color: #e9d37a;
   border: 2px solid darkgreen;
   padding-top: 5rem;
   padding: 1rem;
@@ -14,7 +22,7 @@
   border: 2px solid darkgreen;
 }
 
-.btnDiv {
+.card-header-title .btnDiv {
   border-radius: 5px;
   background: #e9d37a;
   text-align: center;
@@ -32,4 +40,8 @@ a:hover {
   text-decoration: none;
   color: #e9d37a;
   background: #3e3200;
+}
+
+h3 {
+  font-weight: 900;
 }
