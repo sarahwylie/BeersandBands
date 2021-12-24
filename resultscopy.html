@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Remove Multiple Input Fields Dynamically Using Jquery</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="col-md-12">
+      <form>
+        <div class="input_fields_wrap">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="">City</label>
+                <select name="city[]" class="form-control" required="">
+                  <option value="">--Select City--</option>
+                  <option value="noida">Noida</option>
+                  <option value="gurgaon">Gurgaon</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="indor">Indore</option>
+                  <option value="jaipur">Jaipur</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Email</label>
+                <input
+                  name="email"
+                  type="text"
+                  value=""
+                  class="form-control"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="">Numbers</label>
+                <input
+                  name="number"
+                  type="text"
+                  value=""
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Address</label>
+                <textarea
+                  class="form-control"
+                  name="address
+                     
+                     "
+                  required=""
+                ></textarea>
+              </div>
+            </div>
+            <button
+              style="background-color: green"
+              class="add_field_button btn btn-info active"
+            >
+              Add More Address
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fields.js"></script>
+  </body>
+</html>

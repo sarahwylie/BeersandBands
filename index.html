@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
   <head>
   <meta charset="UTF-8" />
@@ -16,23 +19,7 @@
   <link rel="icon" type="image/jpg" sizes="48x48" href="./images/kane-reinholdtsen-LETdkk7wHQk-unsplash.jpg">
   <title>Beers and Bands</title>
 </head>
-       
-  <header>
-    <div class="content">
-      <hgroup>
-        <h1>Beers and Bands</h1>
-      </hgroup>
-    </div>
-    <div class="overlay"></div>
-  </header>
-  <section class="site">
-    <!-- <nav>
-      <a href="">About Us</a>
-      <a href="">Bands </a>
-      <a href="">Beers</a>
-      <a href="">Contact </a> -->
-    <!-- </nav> -->
-   
+
 <body>
   <div class="container is-widescreen hero">
     <nav class="hero-body has-background-warning">
@@ -86,6 +73,37 @@
   <div class="row row3"></div>
   </div> -->
 
+<div class="container">
+<header>
+<div class="content">
+<hgroup>
+<h1>Beers and Bands</h1>
+<div class="btnDiv"><a href="#formSearch">▼</a></div>
+</hgroup>
+</div>
+<div class="overlay"></div>
+</header>
+
+<!-- Rendered Buttons will get Dumped Here -->
+<div id="buttons-view"></div>
+
+<form id="brewery-form">
+<label for="brewery-input">Search a city</label>
+<input type="text" id="brewery-input" />
+<br />
+
+<!-- Button triggers new brewery to be added -->
+<input id="add-brewery" type="submit" value="Add a brewery, Yo!" />
+</form>
+
+<!-- breweries will Get Dumped Here -->
+<!-- <div class="columns">
+<div class="column is-half is-offset-one-quarter"> -->
+<div id="brewerys-view"></div>
+<!-- </div>
+</div> -->
+</div>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
@@ -95,6 +113,7 @@
       crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
     <script src="./scriptGREG.js"></script>
+    <script src="assets/scriptScroll.js"></script>
     <!-- <script src="TravScript.JS"></script> -->
     <script src="./assets/scriptSarah.js"></script>
 </body>

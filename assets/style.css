@@ -65,7 +65,7 @@ header .overlay {
   background:#333 center no-repeat;
   background-size: cover;
   z-index: 0;
-  opacity: 0;  -webkit-filter: blur(4px);
+  /* opacity: 0;  -webkit-filter: blur(4px); */
 }
 img{
   margin-right:20px
@@ -75,7 +75,7 @@ img{
   text-align: center;
   background-color: #efefef;
   font-size: .8em;
-  color: rgb(226, 193, 8)
+  color: rgb(226, 193, 8);
   position: relative;
 }
 
@@ -83,14 +83,10 @@ img{
   color: white;
 }
 
-}
 /* .site nav a{
   padding:10px 30px;
   font-size:1.3em;
   display:inline-block */
-}
-
-}
 
 .title{
 background: rgb(245, 202, 27);
