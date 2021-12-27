@@ -25,8 +25,8 @@ var formSubmitHandler = (event) => {
     } else if (endDate === false) {
         alert("Please choose an end date")
     }
-    getCity(city);
-    getEventResults(city);
+    // getCity(city);
+    // getEventResults(city);
 };
 
 var getCity = (city) => {
@@ -42,28 +42,19 @@ var getCity = (city) => {
         });
 };
  
-var displayBreweries = (res) => {
-    // breweriesOutput.innerHTML = "";
-    // cityResult.innerHTML = "";
- 
-    var city = res[i].city;
-    var name = res[i].name;
-    var address = res[i].street;
-    var web = res[i].website_url;
-
-    console.log(city, name, address, web)
-
-    // cityResult.append(city)
-    var brewMug = document.createElement("div")
-    var brewAddress = document.createElement("p")
-    var brewWeb = document.createElement("p")
-    // breweriesOutput.append(brewMug)
+var displayBreweries = (res, city) => {
+  
 
     for (var i=0; i < res.length; i++) {
-        console.log("Welcome to hell, " + res[i] + "!");
+        var card = `
+        <div>
+        <h6>${res[i].name}</h6>
+        <p>${res[i].street}</p>
+      </div>
+        `
 
-    cityResult.textContent = `${city[i]}`
-    // brewMug.textContent = 
+        var resDiv = document.querySelector("#result-brewery");
+        resDiv.insertAdjacentHTML("beforeend", card);
     }
 }
 
