@@ -4,7 +4,7 @@
 
 ## Created with HTML, CSS, JavaScript, APIs, and Bulma.
 
-##*Screenshot here*
+![BeersandBands](https://user-images.githubusercontent.com/90208612/147577684-ff58e9a7-5729-4561-ba65-b8f78d17ad00.jpg)
 
 ## Check out our site at https://sarahwylie.github.io/BeersandBands/
 
