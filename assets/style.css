@@ -100,8 +100,8 @@ color: rgb(15, 10, 10);
 padding: 20px 35px;
 } */
 
-.columns {
- text-align: left; 
+.brewsults {
+ text-align: right; 
  padding: 20px 35px;
  display: inline-block;
 }
@@ -110,6 +110,10 @@ padding: 20px 35px;
 border: 10px solid  rgb(226, 193, 8);
 /* margin: 5%; */
 align-content: center;
-padding: 2%
+padding: 2%;
+justify-content: space-around;
 }
 
+.button {
+  margin: 5%;
+}

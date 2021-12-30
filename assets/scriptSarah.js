@@ -1,10 +1,10 @@
 var api = `1dSMNu004yPP163tvnnPbdA3cwZleRuJ`;
-// var cityResult = document.querySelector(".city-result")
-// var cityInputEl = document.querySelector("#location")
-// var cityBtn = document.querySelector(".submitBtn");
+var cityResult = document.querySelector(".city-result")
+var cityInputEl = document.querySelector("#location")
+var cityBtn = document.querySelector(".submitBtn");
 var eventOutput = document.querySelector(".event-results")
-// var startDateInput = document.querySelector("#start-date")
-// var endDateInput = document.querySelector("#end-date")
+var startDateInput = document.querySelector("#start-date")
+var endDateInput = document.querySelector("#end-date")
 
 //form submit
 // var formSubmitHandler = (event) => {
