@@ -6,6 +6,9 @@ var eventOutput = document.querySelector(".event-results")
 var startDateInput = document.querySelector("#start-date")
 var endDateInput = document.querySelector("#end-date")
 var breweryOutput = document.querySelector("#breweries-view")
+var starter = new Date(startDateInput)
+document.write(starter.toString())
+
 
 // displaybreweryInfo function re-renders the HTML to display the appropriate content
 function displaybreweryInfo(cityName) {
@@ -26,25 +29,34 @@ function displaybreweryInfo(cityName) {
     for (i=0; i < data.length; i++){
       console.log(data[i].name)
     // let phone = data[i].phone;
-    var name = data[i].name;
-    // var city = data[i].city;
-    // var state = data[i].state;
-    // var postal_code = data[i].postal_code;
-    // var street = data[i].street;
+    var name = data[i].name;    
     var type = data[i].brewery_type;
-    // var website = data[i].website_url;
+    var street = data[i].street;
+    var website = data[i].website_url;
 
-    var breweryDiv = document.createElement("div");
-    var card = document.createElement("div");
-    breweryDiv.append(card);
-    var naming = document.createElement("h3");
-    breweryDiv.append(naming);
+    var breweryCard = document.createElement("span");
+    breweryOutput.appendChild(breweryCard);
+
+    // var card = document.createElement("div");
+    // breweryCard.append(card);
+    var naming = document.createElement("h2");
+    breweryCard.appendChild(naming);
     naming.textContent = name;
-    breweryOutput.append(breweryDiv);
 
-    var typeDiv = document.createElement("p");
-    typeDiv.textContent = type;
-    typeDiv.append(breweryDiv);
+    var brewType = document.createElement("p");
+    brewType.textContent = type;
+    breweryCard.appendChild(brewType);
+
+    var address = document.createElement("p");
+    address.textContent = street;
+    breweryCard.appendChild(address);
+
+    var web = document.createElement("p")
+    web.textContent = website;
+    breweryCard.appendChild(web);
+
+    var cardGap = document.createElement("br");
+    breweryCard.appendChild(cardGap);
     }
 
     
@@ -156,12 +168,12 @@ console.log(TapiUrl);
 var formSubmitHandler = (event) => {
     event.preventDefault();
     var city = cityInputEl.value.trim();
-    var startDate = startDateInput.value;
-    startDate.toString();
+    var startDate = starter.value;
+    // startDate = Date.parse("YYYY-MM-DDTHH:mm:ssZ");
     var start = new Date(startDate);
      var endDate = endDateInput.value;
     var end = new Date(endDate)
-    end.toString()
+    // end.toString()
       console.log(start, end) 
       displaybreweryInfo(city);
        getEventResults(city, startDate, endDate);

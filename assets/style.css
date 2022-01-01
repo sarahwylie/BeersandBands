@@ -87,8 +87,6 @@ img{
   margin: 5%;
 } */
 
-
-
 /* .site nav a{
   padding:10px 30px;
   font-size:1.3em;
@@ -100,20 +98,26 @@ color: rgb(15, 10, 10);
 padding: 20px 35px;
 } */
 
-.brewsults {
- text-align: right; 
- padding: 20px 35px;
- display: inline-block;
-}
-
 .boxinput{
 border: 10px solid  rgb(226, 193, 8);
-/* margin: 5%; */
+margin: 5%;
 align-content: center;
 padding: 2%;
 justify-content: space-around;
 }
 
+.brews {
+ text-align: right; 
+ padding: 20px 35px; 
+ display: inline-block;
+ flex: right;
+} 
+
 .button {
   margin: 5%;
+}
+
+.events {
+  padding: 20px 35px;
+  display: inline-block;
 }
