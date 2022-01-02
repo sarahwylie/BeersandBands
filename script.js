@@ -162,6 +162,9 @@ var getEventResults = (city, startDate, endDate) => {
 
     var cardGap = document.createElement("br");
     eventCard.appendChild(cardGap);
+
+    var cardGap2 = document.createElement("br");
+    eventCard.appendChild(cardGap2);
   }
   //   //api url
 //   var TapiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?startDateTime=${startDate}&endDateTime=${endDate}&city=${city}&apikey=${api}`;
