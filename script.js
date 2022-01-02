@@ -18,7 +18,7 @@ function displaybreweryInfo(cityName) {
   breweryOutput.textContent = "";
     var city = cityName;
   var queryURL =
-    `https://api.openbrewerydb.org/breweries?by_city=${city}`;
+    `https://api.openbrewerydb.org/breweries?by_city=${city}&per_page=200`;
   // console.log(queryURL);
   fetch(queryURL)
   .then(function (response) {
@@ -130,7 +130,7 @@ var getEventResults = (city, startDate, endDate) => {
   eventOutput.textContent = "";
   $.ajax({
     type:"GET",
-    url:`https://app.ticketmaster.com/discovery/v2/events.json?apikey=${api}&city=${city}`,
+    url:`https://app.ticketmaster.com/discovery/v2/events.json?size=200&apikey=${api}&city=${city}`,
     async:true,
     dataType: "json",
     success: function(json) {
@@ -140,24 +140,27 @@ var getEventResults = (city, startDate, endDate) => {
     for (i=0; i < data.length; i++){
       // console.log(data[i].name)
     var startingDate = data[i].dates.start.localDate;
-    if (startDateInput !== startingDate || 0) {
-      // return data[i]
-    }
-      if (startingDate === false) {
-        alert("No events are happening that day!");
-      }
+
+    // if (startDateInput !== startingDate) {
+    // //     return null
+    // // } else if (startingDate === null) {
+    //   return alert;
+    // }
       
     var name = data[i].name;    
     var pic = data[i].images[0].url;
-    var venue = data[i]._embedded.venues.name;
-      console.log(venue)
+    var venue = data[i]._embedded.venues[0].name;
+      // console.log(venue)
     var url = data[i].url;
       // console.log(startingDate);
 
     var eventCard = document.createElement("div");
     eventCard.style.display = "block";
     eventCard.classList = "output";
-    eventOutput.appendChild(eventCard);           
+    eventOutput.appendChild(eventCard);         
+    
+    // var alert = document.innerHTML = `<h2>No events are happening that day!<h2>`;
+    // eventCard.append(alert);
   
     var naming = document.createElement("h2");
     naming.innerHTML = `<strong><a href=${url}>${name}</a></strong>`;

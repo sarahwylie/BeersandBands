@@ -108,6 +108,10 @@ font-size: larger;
 font-weight: bold;
 }
 
+.input-city, .date-range {
+  background-color: rgb(226, 193, 8);
+}
+
 .results {
   justify-content: space-between;
 }
