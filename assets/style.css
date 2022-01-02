@@ -104,11 +104,17 @@ margin: 5%;
 align-content: center;
 padding: 2%;
 justify-content: space-around;
+font-size: large;
+font-weight: bold;
+}
+
+.results {
+  justify-content: space-between;
 }
 
 .brews {
  text-align: right; 
- padding: 20px 35px; 
+margin: 2%; 
  display: inline-block;
  flex: right;
 } 
@@ -118,6 +124,6 @@ justify-content: space-around;
 }
 
 .events {
-  padding: 20px 35px;
+  margin: 2%;
   display: inline-block;
 }
