@@ -103,7 +103,7 @@ border: 10px solid  rgb(226, 193, 8);
 margin: 5%;
 align-content: center;
 padding: 2%;
-justify-content: space-around;
+text-align: center;
 font-size: large;
 font-weight: bold;
 }
