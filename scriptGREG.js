@@ -37,24 +37,38 @@ var getCity = (city) => {
         .then(function (response) {
             return response.json();
         }).then(function (res) {
-            console.log(res);
-            displayBreweries(res, city);
+            displayBreweries(res);
         });
 };
  
-var displayBreweries = (res, city) => {
-  
+var displayBreweries = (res) => {
 
     for (var i=0; i < res.length; i++) {
-        var card = `
-        <div>
-        <h6>${res[i].name}</h6>
-        <p>${res[i].street}</p>
-      </div>
-        `
+        var cardContainer = document.createElement("div")
+        var websiteLink = document.createElement("a")
+        var link = document.createTextNode(`${res[i].name}`)
+        websiteLink.appendChild(link)
+        websiteLink.href = `${res[i].website_url}`
+        var city = document.createElement("p")
+        city.textContent = `${res[i].city}`
+        var address = document.createElement("p")
+        address.textContent = `${res[i].street}`
+        cardContainer.appendChild(websiteLink)
+        cardContainer.appendChild(city)
+        cardContainer.appendChild(address)
+        cardContainer.classList.add("cardContainer")
+        websiteLink.classList.add("websiteLink")
+        city.classList.add("city")
+        address.classList.add("address")    
+    //     var card = `
+    //     <div style="border: gold 2px solid">
+    //     <h1 style="font-weight: bold">${res[i].name}</h1>
+    //     <p>${res[i].street}</p>
+    //   </div>
+    //     `
 
         var resDiv = document.querySelector("#result-brewery");
-        resDiv.insertAdjacentHTML("beforeend", card);
+        resDiv.appendChild(cardContainer);
     }
 }
 

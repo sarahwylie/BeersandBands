@@ -113,3 +113,32 @@ align-content: center;
 padding: 2%
 }
 
+.cardContainer{
+  width:70%;
+  margin: 0 auto;
+  border: gold 2px solid;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 16px;
+  
+
+}
+.websiteLink{
+  color: black;
+  font-weight:bold;
+  display: block;
+}
+.websiteLink:hover{
+  text-decoration: underline;
+}
+.city{
+  background: #ebebeb;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline;
+
+}
+.address{
+  font-size: 15px;
+
+}
