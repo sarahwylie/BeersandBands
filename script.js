@@ -10,6 +10,7 @@ var cityShow = document.querySelector("#input-city");
 cityShow.style.display = "none";
 var dateShow = document.querySelector("#input-date-range");
 dateShow.style.display = "none";
+var output = document.querySelector(".output")
 
 
 // displaybreweryInfo function re-renders the HTML to display the appropriate content
@@ -53,6 +54,8 @@ function displaybreweryInfo(cityName) {
     var website = data[i].website_url;
 
     var breweryCard = document.createElement("div");
+    breweryCard.style.display = "block";
+    breweryCard.classList = "output";
     breweryOutput.appendChild(breweryCard);
       
     // var card = document.createElement("div");
@@ -137,10 +140,10 @@ var getEventResults = (city, startDate, endDate) => {
     for (i=0; i < data.length; i++){
       // console.log(data[i].name)
     var startingDate = data[i].dates.start.localDate;
-    if (startDateInput === startingDate) {
+    if (startDateInput !== startingDate || 0) {
       // return data[i]
     }
-      if (startingDate === null) {
+      if (startingDate === false) {
         alert("No events are happening that day!");
       }
       
@@ -152,6 +155,8 @@ var getEventResults = (city, startDate, endDate) => {
       // console.log(startingDate);
 
     var eventCard = document.createElement("div");
+    eventCard.style.display = "block";
+    eventCard.classList = "output";
     eventOutput.appendChild(eventCard);           
   
     var naming = document.createElement("h2");

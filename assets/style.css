@@ -104,7 +104,7 @@ margin: 5%;
 align-content: center;
 padding: 2%;
 text-align: center;
-font-size: large;
+font-size: larger;
 font-weight: bold;
 }
 
@@ -119,6 +119,7 @@ margin: 2%;
  flex: right;
 } 
 
+
 .button {
   margin: 5%;
 }
@@ -126,4 +127,10 @@ margin: 2%;
 .events {
   margin: 2%;
   display: inline-block;
+}
+
+.output {
+  border: 10px solid  rgb(226, 193, 8);
+  margin: 2%;
+  padding: 5%;
 }
