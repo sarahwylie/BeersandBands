@@ -25,7 +25,24 @@ function displaybreweryInfo(cityName) {
     })
     .then(function (data) {
         console.log(data)
-
+    // var cardContainer = document.createElement("div")
+    // var websiteLink = document.createElement("a")
+    // var link = document.createTextNode(`${data[i].name}`)
+    // websiteLink.appendChild(link)
+    // websiteLink.href = `${data[i].website_url}`
+    // var city = document.createElement("p")
+    // city.textContent = `${data[i].city}`
+    // var address = document.createElement("p")
+    // address.textContent = `${data[i].street}`
+    // cardContainer.appendChild(websiteLink)
+    // cardContainer.appendChild(city)
+    // cardContainer.appendChild(address)
+    // cardContainer.classList.add("cardContainer")
+    // websiteLink.classList.add("websiteLink")
+    // city.classList.add("city")
+    // address.classList.add("address") 
+    // var resDiv = document.querySelector("#result-brewery");
+    // resDiv.appendChild(cardContainer);
     // Storing the rating data
     for (i=0; i < data.length; i++){
       // console.log(data[i].name)
@@ -189,8 +206,20 @@ var formSubmitHandler = (event) => {
     // var end = new Date(endDate)
     // end.toString()
       console.log(startDate) 
-      displaybreweryInfo(city);
-       getEventResults(city, startDate);
+      if (city) {
+        displaybreweryInfo(city);
+        getEventResults(city, startDate);
+        //clear old content from form input
+        cityInputEl.value = "";
+        startDateInput.value = "";
+        // endDateInput.value = "";
+    } else if (city === false) {
+        alert("Please enter a city");
+    }  else if (startDate === false) {
+        alert("Please choose a date")
+    }
+      // displaybreweryInfo(city);
+      //  getEventResults(city, startDate);
        cityShow.style.display = "block";
        dateShow.style.display = "block";
        cityShow.textContent = `${city}`;
