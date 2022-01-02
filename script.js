@@ -60,7 +60,6 @@ function displaybreweryInfo(cityName) {
     var cardGap = document.createElement("br");
     breweryCard.appendChild(cardGap);
     }
-
   
     // <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
     // <br>
@@ -122,7 +121,7 @@ var getEventResults = (city, startDate, endDate) => {
       // console.log(data[i].name)
     var startingDate = data[i].dates.start.localDate;
     if (startDateInput === startingDate) {
-      return data[i]
+      // return data[i]
     }
       if (startingDate === null) {
         alert("No events are happening that day!");
