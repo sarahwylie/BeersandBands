@@ -7,7 +7,7 @@ A one-stop site for your night out! Find a local brewpub and your favorite band 
 HTML, CSS, JavaScript, APIs, and Bootstrap alternatives.
 
 ## Usage
-Check out our site at ![Beers and Bands](https://sarahwylie.github.io/BeersandBands/). The finished output:
+Check out our site at [Beers and Bands](https://sarahwylie.github.io/BeersandBands/). The finished output:
 ![screenshot](https://sarahwylie.github.io/Bio/images/BeersandBands.jpg)
 
 ## Badges
@@ -17,6 +17,6 @@ Check out our site at ![Beers and Bands](https://sarahwylie.github.io/BeersandBa
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-### Made with :blood: :sweat-drop: and :tear-drop: (plus a whole lot of :heart:) by
+### Made with a whole lot of :heart: by
 Sarah Wylie, Travis Bryant, Gregory Rouark, John Hughes, and Staisha Knight
 <sup>©</sup> 2022
